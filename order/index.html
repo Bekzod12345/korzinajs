@@ -1,0 +1,94 @@
+
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="./bootstrap-5.3.1-dist/css/bootstrap.min.css"> 
+    <style> 
+        *{ 
+            user-select: none; 
+        } 
+    </style> 
+    <title>Intixon</title> 
+    <link rel="stylesheet" href="/bootstrap-5.3.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- <link rel="stylesheet" href="/style.css"> -->
+</head> 
+<body> 
+      <header style="z-index: 99999999;" class="bg-light text-center  shadow position-fixed top-0 w-100 py-2"> 
+        <div class="container"> 
+            <h1 class=""> 
+                <a class="text-decoration-none text-dark mb-7 mt-2" href="./index.html">Super Muper Market</a> 
+            </h1> 
+            <form id="form__products"></form> 
+            <div class="col"> 
+                <div class="col-2 my-3 mt-2"> 
+                    <input form="form__products" class="products__search form-control shadow" placeholder="Search" type="text"> 
+                </div> 
+                <div class="col">
+                    <select class="form-select select__model" form="form__products">
+                        <option value="all"  disabled>ALL</option>
+                        <option value="all">all</option>
+            
+                    </select>
+                </div>
+               
+                <div class="col-1"> 
+                    <button form="form__products" class="btn btn-info text-light shadow my-2" type="submit">Submit</button> 
+                </div> 
+            </div> 
+        </div> 
+      </header> 
+      <template> 
+          <li class="border shadow rounded my-3 me-2 text-center p-2" style="width: 40%;"> 
+              <img class="products__img shadow " src="https://via.placeholder.com/200x200" width="240" height="250" style="border-radius:5px ; " alt="Product Photo"> 
+              <h4 class="fs-3 products__name  my-3">Name</h4> 
+              <h5 class="products__model">Model</h5> 
+              <p class=" w-60 products__color mx-auto"><strong></strong></p> 
+              <div> 
+                  <p class="products__price"></p> 
+                  <button class="button_bt btn btn-info text-light" >Buy it</button> 
+              </div> 
+          </li> 
+    </template> 
+    <template class="bookmark__template">
+       <div class="bookmark__movie">
+        <img class="products__img shadow " src="https://via.placeholder.com/200x200" width="145" height="250" style="border-radius:5px ; " alt="Product Photo"> 
+        <h4 class="fs-3 products__name  my-3">Name</h4> 
+        <p class="products__price"></p> 
+        <button class=" btn btn-danger text-light delete__btn" >delet</button> 
+       </div>
+    </template>
+    <main  style="margin-top: 20rem;"> 
+        <div class="container z-index-999999999"> 
+            <div class="accordion  w-80 mx-auto  shadow" id="accordionExample"> 
+                <div class="accordion-item"> 
+                    <h2 class="accordion-header"> 
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> 
+                            Shopping cart 
+                        </button> 
+                    </h2> 
+                    <div id="collapseOne" class="accordion-collapse collapse show " data-bs-parent="#accordionExample"> 
+                        <div class="accordion-body cart__items"> 
+                        
+            
+                    </div> 
+                </div> 
+            </div> 
+            <section class="hero mt-3"> 
+                <div class="container"> 
+            
+                <ul class="products__item list-unstyled d-flex align-items-center justify-content-between flex-wrap"> 
+                     
+                </ul> 
+            </div> 
+        </section> 
+      </main>                                                                                
+ 
+    <script src="/bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
+    <script src="/javascript/mahsulotlar (2).js"></script>
+    <script src="/javascript/utils.js"></script>
+   <script src="/javascript/main.js"></script>
+</body> 
+</html>

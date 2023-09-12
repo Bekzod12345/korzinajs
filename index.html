@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        .err{
+            color: red;
+        }
+        .err_input{
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body class="bg-dark text-light">
+    <header class="bg-light py-2">
+        <div class="container text-center">
+            <h1>
+                <a class="text-dark text-decoration-none" href="order/index.html">Ruyhatdan oting</a>
+            </h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero min-vh-100 text-center d-flex align-items-center justify-content-center">
+            <div class="container">
+                <form class="form__registr row w-50" style="margin-left: 19rem;">
+                    <label class="mb-5" for="name">
+                         <p class="name_text">ism yozing</p>
+                         <input class="input__registr form-control" type="text" id="name" placeholder="ism" required>
+                    </label>
+                    <label class="mb-5" for="lastname">
+                        <p class="lastname_text">familya kiriting</p>
+                        <input class="input__registr form-control" type="text" id="lastname" placeholder="familya" required>
+                    </label>
+                    <label class="mb-5" for="email">
+                        <p class="email_text">email kiriting</p>
+                        <input class="input__registr form-control" type="email" id="email" placeholder="email" required>
+                    </label>
+                    <label class="mb-5" for="password">
+                        <p class="password_text">password kiriting</p>
+                        <input class="input__password form-control" type="password" id="password" placeholder="password" required>
+                    </label>
+                    <div class="next">
+                        <button class="button  btn btn-primary mt-5">bosing</button>
+                     
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="/javascript/utils.js"></script>
+    <script src="/javascript/registr.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
